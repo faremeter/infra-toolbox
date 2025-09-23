@@ -1,0 +1,15 @@
+{
+  "packageManager": "pnpm@10.12.1",
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "jiti": "catalog:",
+    "prettier": "catalog:",
+    "tap": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "typescript-language-server": "catalog:"
+  }
+}
