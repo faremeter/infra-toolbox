@@ -4,6 +4,8 @@ lib::import git step-runner
 : "${GIT_HOOK_KEEP_STAGING:=false}"
 : "${GIT_SKIP_HOOKS:=false}"
 
+GIT_REPO_ROOT=$(realpath "$(git rev-parse --show-toplevel)")
+
 if $GIT_SKIP_HOOKS; then
 	log::warn "skipping git hooks"
 	exit 0
@@ -35,6 +37,6 @@ checkout-staging() {
 
 	dir="$_GIT_HOOK_STAGING_DIR/$hookname-$$"
 	git checkout-index -a --prefix="$dir/"
-	ln -s "$(realpath "$SCRIPTDIR/../node_modules")" "$dir/node_modules"
+	ln -s "$GIT_REPO_ROOT/node_modules" "$dir/node_modules"
 	echo "$dir"
 }
