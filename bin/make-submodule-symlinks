@@ -1,0 +1,53 @@
+#!/usr/bin/env opsh
+
+usage() {
+	cat <<EOF
+$0 please-do-it
+
+This will set up all of the symlinks required for the infra toolbox.  In order for it to run,
+the first argument must be 'please-do-it'.
+EOF
+	exit 1
+}
+
+relpath() {
+	local src=${1%/} dst=${2%/}
+	local cmn=${src} i rel=""
+	while [[ ${cmn%/*} != "$cmn" && ${dst#$cmn} == "$dst" ]]; do
+		cmn=${cmn%/*}
+	done
+	for ((i = 0; i < $((${#src} - ${#cmn})); i++)); do
+		[[ ${src:$i:1} == "/" ]] && rel+="../"
+	done
+	echo "${rel}${dst#${cmn}/}"
+}
+
+[[ $# -eq 1 && $1 == please-do-it ]] || usage
+
+INFRA_TOOLBOX_ROOT="$(cd $SCRIPTDIR/.. && pwd)"
+
+LINKS=(
+	.githooks
+	eslint.config.ts
+	LICENSE
+	package.json
+	pnpm-workspace.yaml
+	tsconfig.base.json
+	bin/check-env
+	bin/opsh
+	bin/ssh-to-host
+)
+
+mkdir -p bin
+
+for i in "${LINKS[@]}"; do
+	if [[ -L "$i" ]]; then
+		rm "$i" || log::fatal "failed to remove symlink '$i'"
+	elif [[ -e "$i" ]]; then
+		log::fatal "refusing to delete real file '$i'"
+	fi
+
+	SRC=$(relpath $(dirname "$PWD/$i") "$INFRA_TOOLBOX_ROOT/$i")
+	log::info "linking $SRC -> $i"
+	ln -s "$SRC" "$i"
+done
