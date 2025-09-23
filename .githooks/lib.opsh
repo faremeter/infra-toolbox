@@ -38,5 +38,10 @@ checkout-staging() {
 	dir="$_GIT_HOOK_STAGING_DIR/$hookname-$$"
 	git checkout-index -a --prefix="$dir/"
 	ln -s "$GIT_REPO_ROOT/node_modules" "$dir/node_modules"
+
+	if [[ -d "$GIT_REPO_ROOT/.infra-toolbox" ]] ; then
+		rm -rf "$dir/.infra-toolbox" && ln -s "$GIT_REPO_ROOT/.infra-toolbox" "$dir/.infra-toolbox"
+	fi
+
 	echo "$dir"
 }
