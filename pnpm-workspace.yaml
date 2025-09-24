@@ -46,6 +46,8 @@ catalog:
   "@faremeter/payment-solana-exact": 0.5.0
   "@faremeter/types": 0.7.0
   "@faremeter/wallet-evm": 0.7.0
+  "@svmkit/pulumi-runner": ^0.0.3
 
 catalogMode: prefer
+
 linkWorkspacePackages: true
