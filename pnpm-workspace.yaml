@@ -47,6 +47,8 @@ catalog:
   "@faremeter/types": 0.7.0
   "@faremeter/wallet-evm": 0.7.0
   "@svmkit/pulumi-runner": ^0.0.3
+  "@pulumi/pulumi": 3.197.0
+  "@pulumi/command": 1.1.1
 
 catalogMode: prefer
 
