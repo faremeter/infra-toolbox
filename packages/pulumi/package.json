@@ -2,7 +2,7 @@
   "name": "@infra-toolbox/pulumi",
   "version": "0.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "dependencies": {
     "@pulumi/command": "catalog:",
     "@pulumi/pulumi": "catalog:"
