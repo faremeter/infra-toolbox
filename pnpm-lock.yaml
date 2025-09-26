@@ -10,10 +10,10 @@ catalogs:
       specifier: 9.34.0
       version: 9.34.0
     "@pulumi/command":
-      specifier: ^1.1.1
+      specifier: 1.1.1
       version: 1.1.1
     "@pulumi/pulumi":
-      specifier: ^3.197.0
+      specifier: 3.197.0
       version: 3.197.0
     eslint:
       specifier: 9.34.0
