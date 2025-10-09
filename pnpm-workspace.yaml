@@ -40,12 +40,12 @@ catalog:
   viem: 2.37.2
   zx: 8.8.1
   "@pulumi/tls": 5.2.2
-  "@faremeter/facilitator": 0.7.0
-  "@faremeter/info": 0.7.0
-  "@faremeter/payment-evm": 0.7.0
+  "@faremeter/facilitator": 0.8.0
+  "@faremeter/info": 0.8.0
+  "@faremeter/payment-evm": 0.8.0
   "@faremeter/payment-solana-exact": 0.5.0
-  "@faremeter/types": 0.7.0
-  "@faremeter/wallet-evm": 0.7.0
+  "@faremeter/types": 0.8.0
+  "@faremeter/wallet-evm": 0.8.0
   "@svmkit/pulumi-runner": 0.1.1
   "@pulumi/pulumi": 3.197.0
   "@pulumi/command": 1.1.1
