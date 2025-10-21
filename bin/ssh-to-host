@@ -39,14 +39,6 @@ if ! [[ "$hostindex" =~ ^[0-9]+$ ]] || [ "$hostindex" -ge "$NODE_COUNT" ]; then
 fi
 
 PRIVKEY="$(temp::file)"
-
-cleanup() {
-    rm -f "$PRIVKEY"
-}
-
-trap cleanup EXIT
-
-touch "$PRIVKEY"
 chmod 600 "$PRIVKEY"
 
 connection="$(pulumi stack output --show-secrets nodes | jq -r ".[$hostindex]"'.connection as
