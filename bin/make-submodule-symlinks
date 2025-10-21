@@ -36,6 +36,7 @@ LINKS=(
 	bin/check-env
 	bin/opsh
 	bin/ssh-to-host
+	lib/pulumi.opsh
 )
 
 mkdir -p bin
