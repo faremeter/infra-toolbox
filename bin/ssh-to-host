@@ -17,7 +17,7 @@ if ! check_pulumi_yaml; then
 fi
 
 list_nodes() {
-    pulumi stack output --show-secrets nodes | jq -r '.[].name' | nl -v 0
+    pulumi stack output nodes | jq -r '.[].name' | nl -v 0
     exit "$1"
 }
 
@@ -30,7 +30,7 @@ fi
 hostindex=$1
 shift
 
-NODE_COUNT=$(pulumi stack output --show-secrets nodes | jq -r 'length')
+NODE_COUNT=$(pulumi stack output nodes | jq -r 'length')
 
 if ! [[ "$hostindex" =~ ^[0-9]+$ ]] || [ "$hostindex" -ge "$NODE_COUNT" ]; then
     log::error "Invalid node index '$hostindex'."
