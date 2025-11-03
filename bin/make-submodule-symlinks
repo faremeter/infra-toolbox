@@ -39,7 +39,7 @@ LINKS=(
 	lib/pulumi.opsh
 )
 
-mkdir -p bin
+mkdir -p bin lib
 
 for i in "${LINKS[@]}"; do
 	if [[ -L "$i" ]]; then
