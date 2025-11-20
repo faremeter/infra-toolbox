@@ -9,7 +9,7 @@ packages:
 
 catalog:
   "@eslint/js": 9.34.0
-  "@faremeter/x-solana-settlement": 0.3.1
+  "@faremeter/x-solana-settlement": 0.4.0
   "@hono/node-server": 1.19.1
   "@logtape/logtape": 1.0.4
   "@solana-program/compute-budget": 0.8.0
@@ -41,12 +41,12 @@ catalog:
   viem: 2.37.2
   zx: 8.8.1
   "@pulumi/tls": 5.2.2
-  "@faremeter/facilitator": 0.11.1
-  "@faremeter/info": 0.11.1
-  "@faremeter/payment-evm": 0.11.1
-  "@faremeter/payment-solana": 0.11.1
-  "@faremeter/types": 0.11.1
-  "@faremeter/wallet-evm": 0.11.1
+  "@faremeter/facilitator": 0.13.0
+  "@faremeter/info": 0.13.0
+  "@faremeter/payment-evm": 0.13.0
+  "@faremeter/payment-solana": 0.13.0
+  "@faremeter/types": 0.13.0
+  "@faremeter/wallet-evm": 0.13.0
   "@svmkit/pulumi-runner": 0.1.1
   "@pulumi/pulumi": 3.197.0
   "@pulumi/command": 1.1.1
