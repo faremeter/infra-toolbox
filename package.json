@@ -11,5 +11,10 @@
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
     "typescript-language-server": "catalog:"
+  },
+  "pnpm": {
+    "overrides": {
+      "bn.js": "^5.2.3"
+    }
   }
 }
