@@ -12,11 +12,11 @@ catalog:
   "@faremeter/x-solana-settlement": 0.4.0
   "@hono/node-server": 1.19.1
   "@logtape/logtape": 1.0.4
-  "@solana-program/compute-budget": 0.8.0
-  "@solana-program/token": 0.5.1
-  "@solana/kit": 2.3.0
-  "@solana/spl-token": 0.4.13
-  "@solana/transactions": 2.3.0
+  "@solana-program/compute-budget": 0.15.0
+  "@solana-program/token": 0.13.0
+  "@solana/kit": 6.7.0
+  "@solana/spl-token": 0.4.14
+  "@solana/transactions": 6.7.0
   "@solana/web3.js": 1.98.4
   "@tapjs/asserts": 4.0.1
   "@tapjs/tsx": 3.0.1
@@ -41,12 +41,12 @@ catalog:
   viem: 2.40.0
   zx: 8.8.1
   "@pulumi/tls": 5.2.2
-  "@faremeter/facilitator": 0.19.0
-  "@faremeter/info": 0.19.0
-  "@faremeter/payment-evm": 0.19.0
-  "@faremeter/payment-solana": 0.19.0
-  "@faremeter/types": 0.19.0
-  "@faremeter/wallet-evm": 0.19.0
+  "@faremeter/facilitator": 0.20.1
+  "@faremeter/info": 0.20.1
+  "@faremeter/payment-evm": 0.20.1
+  "@faremeter/payment-solana": 0.20.1
+  "@faremeter/types": 0.20.1
+  "@faremeter/wallet-evm": 0.20.1
   "@svmkit/pulumi-runner": 0.1.1
   "@pulumi/pulumi": 3.197.0
   "@pulumi/command": 1.1.1
