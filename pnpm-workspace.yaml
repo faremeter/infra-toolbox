@@ -1,8 +1,9 @@
 packages:
-  - apps/*
+  - apps/**/*
   - packages/*
   - scripts/*
   - scripts
+  - tests
   - infra-toolbox/**/*
   - "!**/node_modules/**"
   - "!node_modules"
