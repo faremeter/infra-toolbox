@@ -11,6 +11,22 @@
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
     "@types/node": "catalog:",
+    "react-dom": "^19.2.1",
     "typescript-language-server": "catalog:"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt",
+      "better-sqlite3",
+      "esbuild",
+      "bigint-buffer",
+      "bufferutil",
+      "utf-8-validate"
+    ],
+    "overrides": {
+      "react": "^19.2.1",
+      "react-dom": "^19.2.1",
+      "react-reconciler": "^0.31.0"
+    }
   }
 }
