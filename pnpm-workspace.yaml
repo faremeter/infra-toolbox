@@ -39,9 +39,13 @@ catalog:
   zx: 8.8.1
   "@pulumi/tls": 5.2.2
   "@faremeter/facilitator": 0.21.0
+  "@faremeter/gateway-nginx": 0.21.0
   "@faremeter/info": 0.21.0
+  "@faremeter/middleware": 0.21.0
+  "@faremeter/middleware-openapi": 0.21.0
   "@faremeter/payment-evm": 0.21.0
   "@faremeter/payment-solana": 0.21.0
+  "@faremeter/sidecar": 0.21.0
   "@faremeter/types": 0.21.0
   "@faremeter/wallet-evm": 0.21.0
   "@svmkit/pulumi-runner": 0.1.1
