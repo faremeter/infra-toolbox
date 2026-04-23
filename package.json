@@ -10,6 +10,7 @@
     "tsx": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
+    "@types/node": "catalog:",
     "typescript-language-server": "catalog:"
   }
 }
