@@ -40,6 +40,7 @@ catalog:
   zx: 8.8.1
   "@pulumi/tls": 5.2.2
   "@faremeter/facilitator": 0.21.0
+  "@faremeter/flex-solana": 0.2.1
   "@faremeter/gateway-nginx": 0.21.0
   "@faremeter/info": 0.21.0
   "@faremeter/middleware": 0.21.0
